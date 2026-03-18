@@ -23,8 +23,8 @@ helm:
           cert-manager.io/cluster-issuer: letsencrypt
         hosts:
         - host: openbao.giebert.dev
-          tls:
-          - hosts:
-            - openbao.giebert.dev
+        tls:
+        - hosts:
+          - openbao.giebert.dev
           secretName: nextcloud-tls
 
