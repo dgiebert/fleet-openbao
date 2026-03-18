@@ -26,5 +26,5 @@ helm:
         tls:
         - hosts:
           - openbao.giebert.dev
-          secretName: nextcloud-tls
+          secretName: openbao-tls
 
