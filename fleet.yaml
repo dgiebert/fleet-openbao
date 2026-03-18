@@ -1,0 +1,23 @@
+defaultNamespace: "openbao"
+
+helm:
+  releaseName: "openbao"
+  chart: "openbao"
+  repo: "https://openbao.github.io/openbao-helm"
+  version: "0.26.1"
+  values: 
+    csi:
+      agent:
+        enabled: false
+    server:
+      ingress:
+        enabled: true
+        annotations:
+          cert-manager.io/cluster-issuer: letsencrypt
+        hosts:
+        - host: openbao.giebert.dev
+          tls:
+          - hosts:
+            - openbao.giebert.dev
+          secretName: nextcloud-tls
+
