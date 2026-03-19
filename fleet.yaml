@@ -13,9 +13,6 @@ helm:
   repo: "https://openbao.github.io/openbao-helm"
   version: "0.26.1"
   values: 
-    csi:
-      agent:
-        enabled: false
     server:
       ha:
         enabled: true
