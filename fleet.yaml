@@ -17,6 +17,8 @@ helm:
       agent:
         enabled: false
     server:
+      ha:
+        enabled: true
       ingress:
         enabled: true
         annotations:
