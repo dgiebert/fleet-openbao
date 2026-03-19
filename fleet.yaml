@@ -19,6 +19,8 @@ helm:
     server:
       ha:
         enabled: true
+        raft:
+          enabled: true
       ingress:
         enabled: true
         annotations:
